@@ -80,8 +80,8 @@ No build step. No framework. Three files serve the entire frontend.
 - **Source tag:** `fieldreports.newsystems.ca`
 - **Rate limits:** 5 min cooldown per email, 50 submissions/hour global
 - **Field truncation:** 5000 chars max per field (server-side)
-- **Emails sent from:** the Google account that deployed the Apps Script
-- **Team notifications go to:** stadium@newsystems.ca
+- **Emails sent from:** the Google account that deployed the Apps Script. **Must be `email@newsystems.ca`**, not `tommy@newsystems.ca`. `stadium@newsystems.ca` is a forwarding alias that includes tommy@ in its recipient list, so deploying from tommy@ creates a self-send loop and Gmail filters the team notification out of the inbox.
+- **Team notifications go to:** stadium@newsystems.ca (forwards to team members)
 - **Subject lines:** Confirmation = "New Stadium: Field Report Submission Received". Team = "New Field Report: {Name}"
 
 ## Common Tasks

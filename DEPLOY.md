@@ -16,14 +16,18 @@
 4. Go back to your Sheet. You should see a "Submissions" tab with all 21 column headers
 
 ### Deploy as Web App
-1. In Apps Script, click **Deploy > New deployment**
-2. Click the gear icon next to "Select type" and choose **Web app**
-3. Settings:
+
+> ⚠️ **Deploy from `email@newsystems.ca`, not `tommy@newsystems.ca`.** `stadium@newsystems.ca` is a forwarding alias whose recipient list includes tommy@. Deploying from tommy@ causes the team notification to loop back to the sender and get filtered out of the inbox by Gmail. The same constraint applies to the sibling `new-stadium-brief` project.
+
+1. Sign in to the Apps Script editor as **email@newsystems.ca** (use a separate browser profile, incognito, or sign out and back in). If the Sheet was created by another account, share it with email@ as Editor first, then open it from email@'s Drive.
+2. In Apps Script, click **Deploy > New deployment**
+3. Click the gear icon next to "Select type" and choose **Web app**
+4. Settings:
    - Description: "Field Reports submission handler"
-   - Execute as: **Me** (the Google account that will send emails — should be the one with access to stadium@newsystems.ca)
+   - Execute as: **Me** (must be email@newsystems.ca)
    - Who has access: **Anyone**
-4. Click **Deploy**
-5. Copy the Web App URL (it looks like `https://script.google.com/macros/s/XXXX/exec`)
+5. Click **Deploy**, accept any auth prompts (Spreadsheet + Gmail scopes)
+6. Copy the Web App URL (it looks like `https://script.google.com/macros/s/XXXX/exec`)
 
 ### Wire the URL into the form
 1. Open `form.js`

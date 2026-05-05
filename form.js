@@ -1,4 +1,4 @@
-const APPS_SCRIPT_URL = '';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwWIoPkmFydoUi7Re6Ph5V1WZDTf1q6WpCJjSmwpYd94Z9-rAdCslXGxnmIOd03bdB3Qw/exec';
 
 const form = document.getElementById('brief-form');
 const steps = document.querySelectorAll('.form-step');
