@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Field Reports</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="site-nav">
+      <a href="https://newsystems.ca/">Home</a>
+      <a href="https://newsystems.ca/newstadium" class="active">New Stadium</a>
+      <a href="https://newsystems.ca/newdemos">New Demos</a>
+      <a href="https://newsystems.ca/newbuilds">New Builds</a>
+      <a href="https://newsystems.ca/theotherstuff">The Other Stuff Podcast</a>
+    </nav>
+  </header>
+  <noscript>
+    <p style="padding: 2rem 1.5rem; color: #8b3a3a;">
+      This form requires JavaScript. Please enable JavaScript or email
+      <a href="mailto:stadium@newsystems.ca">stadium@newsystems.ca</a> directly.
+    </p>
+  </noscript>
+  <main>
+    <nav class="progress" aria-label="Form progress">
+      <button type="button" class="step active" data-step="1" aria-current="step">Contact</button>
+      <button type="button" class="step" data-step="2">Work</button>
+      <span class="step" data-step="3">Confirmation</span>
+    </nav>
+
+    <form id="brief-form" novalidate>
+      <!-- Step 1: Contact Information -->
+      <section class="form-step active" data-step="1">
+        <h1>Contact Information</h1>
+
+        <p class="form-intro">Field research, field studies, or fieldwork is the collection of raw data outside a laboratory, library, or workplace setting. The approaches and methods used in field research vary across disciplines. A field report is the talk a researcher gives after; &ldquo;coming back from the field, where they share what was observed firsthand among real people in their natural setting.&rdquo; Complete this form to express interest in facilitating a Field Report at New Stadium.</p>
+
+        <div class="field">
+          <label for="firstName"><span class="q-num">1.</span> First name</label>
+          <input type="text" id="firstName" name="firstName" required autocomplete="given-name" class="input-short" placeholder="Jane" maxlength="100" />
+          <span class="error" role="alert">Please enter your first name.</span>
+        </div>
+
+        <div class="field">
+          <label for="lastName"><span class="q-num">2.</span> Last name</label>
+          <input type="text" id="lastName" name="lastName" required autocomplete="family-name" class="input-short" placeholder="Doe" maxlength="100" />
+          <span class="error" role="alert">Please enter your last name.</span>
+        </div>
+
+        <div class="field">
+          <label for="email"><span class="q-num">3.</span> Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email" class="input-medium" placeholder="jane@example.com" maxlength="200" />
+          <span class="error" role="alert">Please enter a valid email address.</span>
+        </div>
+
+        <div class="field">
+          <label for="twitter"><span class="q-num">4.</span> Twitter <span class="optional">(optional)</span></label>
+          <div class="handle-input">
+            <span class="handle-prefix">@</span>
+            <input type="text" id="twitter" name="twitter" class="input-short" placeholder="handle" maxlength="50" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="instagram"><span class="q-num">5.</span> Instagram <span class="optional">(optional)</span></label>
+          <div class="handle-input">
+            <span class="handle-prefix">@</span>
+            <input type="text" id="instagram" name="instagram" class="input-short" placeholder="handle" maxlength="50" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="website"><span class="q-num">6.</span> Personal website/portfolio <span class="optional">(optional)</span></label>
+          <span class="field-description">Anything that will help us develop a better understanding of you and your body of work.</span>
+          <input type="url" id="website" name="website" class="input-medium" placeholder="https://yoursite.com" maxlength="300" />
+        </div>
+
+        <div class="field">
+          <label for="phone"><span class="q-num">7.</span> Phone number <span class="optional">(optional)</span></label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" class="input-medium" placeholder="416-555-0123" maxlength="20" />
+        </div>
+
+        <div class="field">
+          <label for="company"><span class="q-num">8.</span> What company/organization are you with? <span class="optional">(optional)</span></label>
+          <input type="text" id="company" name="company" class="input-medium" placeholder="" maxlength="200" />
+        </div>
+
+        <div class="field">
+          <label for="referral"><span class="q-num">9.</span> How were you made aware of this opportunity? <span class="optional">(optional)</span></label>
+          <input type="text" id="referral" name="referral" class="input-medium" placeholder="e.g., Instagram, Twitter, a friend, etc." maxlength="300" />
+        </div>
+
+        <button type="button" class="btn-next" data-next="2">Next</button>
+      </section>
+
+      <!-- Step 2: Work -->
+      <section class="form-step" data-step="2">
+        <h1>Work</h1>
+
+        <p class="form-intro">Field research, field studies, or fieldwork is the collection of raw data outside a laboratory, library, or workplace setting. The approaches and methods used in field research vary across disciplines. A field report is the talk a researcher gives after; &ldquo;coming back from the field, where they share what was observed firsthand among real people in their natural setting.&rdquo;</p>
+
+        <div class="field">
+          <label for="question"><span class="q-num">1.</span> In a few sentences, what is the fundamental question driving your research, practice, work at this moment? What are you investigating? Why?</label>
+          <textarea id="question" name="question" rows="1" required class="input-long" placeholder="" maxlength="5000"></textarea>
+          <span class="error" role="alert">Please describe the question driving your work.</span>
+        </div>
+
+        <div class="field">
+          <label for="methods"><span class="q-num">2.</span> How are you investigating this question? What tools, frameworks, exercises, methods, are you using?</label>
+          <textarea id="methods" name="methods" rows="1" required class="input-long" placeholder="" maxlength="5000"></textarea>
+          <span class="error" role="alert">Please describe your methods.</span>
+        </div>
+
+        <div class="field">
+          <label for="links"><span class="q-num">3.</span> Please provide links to any work or documentation of your work that we can investigate further. Please overshare. If you need to attach any documents, media, or any other file types, email them to <a href="mailto:cairo@newsystems.ca">cairo@newsystems.ca</a> after completing this form.</label>
+          <textarea id="links" name="links" rows="1" required class="input-long" placeholder="" maxlength="5000"></textarea>
+          <span class="error" role="alert">Please provide at least one link.</span>
+        </div>
+
+        <div class="field">
+          <label for="format"><span class="q-num">4.</span> The format of a &ldquo;Field Report&rdquo; is flexible and very much at the discretion of the facilitator. What would the ideal experience look like to you, from start to finish?</label>
+          <textarea id="format" name="format" rows="1" required class="input-long" placeholder="" maxlength="5000"></textarea>
+          <span class="error" role="alert">Please describe the ideal experience.</span>
+        </div>
+
+        <div class="field">
+          <label for="learnings"><span class="q-num">5.</span> What would people learn from you sharing your work through the format of a Field Report?</label>
+          <textarea id="learnings" name="learnings" rows="1" required class="input-long" placeholder="" maxlength="5000"></textarea>
+          <span class="error" role="alert">Please describe the learnings.</span>
+        </div>
+
+        <div class="field">
+          <label for="outcomes"><span class="q-num">6.</span> What are the direct outcomes, and potential side-effects that you are hoping to achieve?</label>
+          <textarea id="outcomes" name="outcomes" rows="1" required class="input-long" placeholder="" maxlength="5000"></textarea>
+          <span class="error" role="alert">Please describe the outcomes.</span>
+        </div>
+
+        <div class="field">
+          <label for="other"><span class="q-num">7.</span> Is there anything else you&rsquo;d like to share that hasn&rsquo;t been captured by the questions above? <span class="optional">(optional)</span></label>
+          <textarea id="other" name="other" rows="1" class="input-long" placeholder="" maxlength="5000"></textarea>
+        </div>
+
+        <p class="field-description privacy-note">Your information is stored securely and used only to evaluate your Field Report submission. For any further questions or inquiries, please email <a href="mailto:stadium@newsystems.ca">stadium@newsystems.ca</a></p>
+
+        <div class="step-nav">
+          <button type="button" class="btn-back" data-back="1">Previous</button>
+          <button type="submit" class="btn-submit">Submit</button>
+        </div>
+      </section>
+    </form>
+
+    <!-- Step 3: Confirmation -->
+    <section class="form-step confirmation" data-step="3">
+      <p>A confirmation has been sent to your email.</p>
+      <p>If your work is a fit, we will connect with you within a week to follow up with next steps.</p>
+      <p>For any further questions or inquiries, please email <a href="mailto:stadium@newsystems.ca">stadium@newsystems.ca</a></p>
+      <p>Thank you for everything.</p>
+      <p>New</p>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="footer-nav">
+      <a href="https://x.com/newsystems_" target="_blank" rel="noopener noreferrer"> Twitter </a>
+      <a href="https://www.instagram.com/newsystems_/" target="_blank" rel="noopener noreferrer"> Instagram </a>
+      <a href="https://lu.ma/newsystems" target="_blank" rel="noopener noreferrer"> Luma </a>
+      <a href="mailto:stadium@newsystems.ca"> Contact </a>
+    </nav>
+  </footer>
+
+  <script src="form.js"></script>
+</body>
+</html>
