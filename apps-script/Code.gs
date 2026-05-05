@@ -8,7 +8,7 @@ const FORM_TOKEN = 'ns-fieldreports-2026';
 const MAX_FIELD_LEN = 5000;
 const MAX_SUBMISSIONS_PER_HOUR = 50;
 const EMAIL_COOLDOWN_MS = 300000; // 5 minutes per email address
-const STATUS_COLUMN = 20; // 1-indexed column for Status flag (see setupSheet)
+const STATUS_COLUMN = 19; // 1-indexed column for Status flag (see setupSheet)
 
 function doPost(e) {
   try {
